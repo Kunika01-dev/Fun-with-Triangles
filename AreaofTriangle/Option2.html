@@ -61,7 +61,7 @@ button:hover{cursor: pointer;}
        const b=Number(side[1].value)
        const c=Number(side[2].value)
        function valid(A,B,C) {
-           if(A+B<C || B+C<A || C+A<B){
+           if(A+B<=C || B+C<=A || C+A<=B){
               
                return message()
            }
