@@ -6,5 +6,6 @@
 <li> to identify whether the input angles can form a Triangle or not</li>
 <li> to find the area of a Triangle</li>
 <li>to find hypotenuse of a Triangle</li>
-<pre>Check out the link to view app:<pre>
-<h3>https://kunika-triangleapp.netlify.app</h3>
+  <br>
+<p>Check out the link to view app:<p>
+<h3 align='center'>https://kunika-triangleapp.netlify.app</h3>
