@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&family=Raleway:wght@100&family=Zen+Kurenaido&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif;
+color: black;
+}
+    body{
+    background-color: #7986cb;}
+    #output{
+    display: flexbox;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    position: relative;
+    margin: 6rem;
+    
+}
+#button{border-radius: 1rem; font-size: 1.2rem; padding: 0.5rem; margin: 1.5vh 10vh; font-weight: bold; background-color: #9fa8da;
+    border-color: black;}
+
+button:hover{cursor: pointer;}
+
+.container{ 
+    height: 10vh;
+    width: 10vh;
+    margin: auto;
+
+}
+.side{
+    font-size: 1rem;
+    font-weight: bolder;
+}
+    
+ </style>
+</head>
+<body>
+    <div class="container">
+    <label  for="B">B=<input type="number" class='side' value="B"></label>
+    <label for="H">H=<input type="number" class="side" value="H"></label>
+    <button id='button'>Submit</button>
+    </div>
+    <div id="output"></div>
+    <script>
+        var side=document.querySelectorAll('.side')
+        var output=document.getElementById('output')
+        var btn=document.getElementById('button')
+            
+               btn.addEventListener('click', function(b,h){
+                b= Number(side[0].value)
+        h=Number(side[1].value)
+
+                   if (b>0 && h>0){
+
+                area= b*h*0.5
+             Area=area.toFixed(2)
+             output.innerText="Area=" + Area + "unit2"}
+             else{
+                 output.innerText="Add a valid field"
+             }
+
+               })
+    </script>
+    
+</body>
+</html> 

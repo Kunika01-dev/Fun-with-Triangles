@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quiz</title>
+    
+    <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&family=Raleway:wght@100&family=Zen+Kurenaido&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif;
+color: black;
+}
+.quiz-form .container{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+h1{
+text-align: center;
+font-weight: bolder;
+font-size: 1.5rem;
+display: flexbox;
+text-overflow: clip;
+width: 10%;
+margin: auto;
+padding: 1.5px 1.5px;
+border-radius: 10px ;
+border-color: black;
+background-color: #9fa8da;
+
+}
+
+body{
+    background-color: #7986cb;
+}
+#output{
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    position: relative;
+    margin: 6vh;
+    
+}
+#button{border-radius: 1rem; font-size: 1.2rem; padding: 0.3rem;display: block; margin: auto; font-weight: bold; background-color: #9fa8da;
+    border-color: black; }
+
+button:hover{cursor: pointer;}
+
+    </style>
+    
+</head>
+<body>
+    <h1>Triangle Quiz</h1>
+    <form class="quiz-form">
+        <div class="container">
+            <p>What is the third angle of triangle where angle1 = 60° and angle2 = 50°?</p>
+               <label> <input type="radio" name="question1" value="60°"/>60°</label>
+               <label> <input type="radio" name="question1" value="70°"/>70°</label>
+               <label> <input type="radio" name="question1" value="90°"/>90°</label>  
+        </div>
+        <div class="container">
+            <p>If a triangle has an angle = 90°, what it is called?</p>
+               <label> <input type="radio" name="question2" value="Acute"/>Acute</label>
+               <label> <input type="radio" name="question2" value="Obtuse"/>Obtuse</label>
+               <label> <input type="radio" name="question2" value="Right Angled"/>Right Angled</label>  
+        </div>
+        <div class="container">
+            <p>Which of the following is a Pythagoras Triplet?</p>
+               <label for="6,8,10"> <input type="radio" name="question3" value="6,8,10"/>6,8,10</label>
+               <label for='11,12,13'> <input type="radio" name="question3" value='11,12,13'/>11,12,13</label>
+               <label for='1,6,5'> <input type="radio" name="question3" value='1,6,5'/>1,6,5</label>  
+        </div>
+        <div class="container">
+            <p>Which triangle has all sides equal?</p>
+               <label for='Acute Triangle'> <input type="radio" name="question4" value='Acute Triangle'/>Acute Triangle</label>
+               <label for='Obtuse Triangle'> <input type="radio" name="question4"  value='Obtuse Triangle'/>Obtuse Triangle</label>
+               <label for='Equilateral Triangle'> <input type="radio" name="question4" value='Equilateral Triangle'/>Equilateral Triangle</label>  
+        </div>
+        <div class="container">
+            <p>What is the hypotenuse of triangle with base=9cm and height=12cm?</p>
+               <label for="15cm"> <input type="radio" name="question5" value='15cm'/>15cm</label>
+               <label for="18cm"> <input type="radio" name="question5"  value='18cm'/>18cm</label>
+               <label for="20cm"> <input type="radio" name="question5" value='20cm'/>20cm</label>  
+        </div>
+    </form>
+        <br>
+        <button id='button'>Submit</button>
+        <div id="output"></div>
+        <script src="quiz.js"></script>
+    
+</body>
+</html>

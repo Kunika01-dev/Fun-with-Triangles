@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&family=Raleway:wght@100&family=Zen+Kurenaido&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Zen Kurenaido', sans-serif;
+color: black;
+}
+
+.heading{
+text-align: center;
+font-weight: bolder;
+font-size: 1.5rem;
+display: flexbox;
+text-overflow: clip;
+width: 25%;
+margin: auto;
+padding: 1.5px 1.5px;
+border-radius: 10px ;
+border-color: black;
+background-color: #9fa8da;
+
+}
+.sub-heading{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: flexbox;
+    border-radius: 5%;
+    width: 15%;
+    margin: 4% auto;
+    padding: 2px 2px;
+    background-color: #9fa8da;
+}
+
+.menu ul li {
+    color: black;
+    list-style: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin: 3% auto;
+       
+}
+.menu ul li a:hover{
+    cursor: pointer;
+    color: black;
+    border:2px solid black;
+    padding: 0.8rem 0.8rem;
+    background-color: #9fa8da;    
+}
+
+body{
+    background-color: #7986cb;
+}
+
+.menu ul li a{
+    text-decoration: none;
+}
+
+.quiz-form .container{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+#output{
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    position: relative;
+    margin: 10rem;
+    
+}
+#button{border-radius: 1rem; font-size: 1.2rem; padding: 0.rem; margin: 1vh 5vh; font-weight: bold; background-color: #9fa8da;
+    border-color: black;}
+
+button:hover{cursor: pointer;}
+
+.container{ 
+    height: 10vh;
+    width: 10vh;
+    margin: auto;
+
+}
+.side{
+    font-size: 1rem;
+    font-weight: bolder;
+}
